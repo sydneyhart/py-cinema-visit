@@ -5,10 +5,10 @@ from app.cinema.bar import CinemaBar
 
 
 def cinema_visit(
-    movie: str,
     customers: list[dict],
     hall_number: int,
     cleaner: str,
+    movie: str,
 ) -> None:
     customer_objects = [
         Customer(name=customer["name"], food=customer["food"])
