@@ -1,4 +1,4 @@
-cb = CinemaBar()
-customer = Customer("Bob", "popcorn")
-cb.sell_product(customer=customer, product=customer.food)
-# Cinema bar sold popcorn to Bob.
+class CinemaBar:
+    @staticmethod
+    def sell_product(product, customer) -> None:
+        print(f"Cinema bar sold {product} to {customer.name}.")
