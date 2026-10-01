@@ -1,3 +1,3 @@
-class Cleaner:
-    def __init__(self, name: str) -> None:
-        self.name = name
+anna = Cleaner(name="Anna")
+anna.clean_hall(hall_number=5)
+# Cleaner Anna is cleaning hall number 5.
