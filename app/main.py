@@ -3,6 +3,7 @@ from app.cleaner import Cleaner
 from app.cinema_hall import CinemaHall
 from app.cinema_bar import CinemaBar
 
+
 def cinema_visit(
     customers: list,
     hall_number: int,
