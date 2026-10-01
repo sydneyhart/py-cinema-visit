@@ -1,12 +1,9 @@
-class CinemaHall:
-    def __init__(self, hall_number: int):
-        self.hall_number = hall_number
+hall = CinemaHall(hall_number=5)
+movie_name = "Madagascar"
+customers = [
+    Customer(name="Bob", food="Coca-cola"),
+    Customer(name="Alex", food="popcorn")
+]
+cleaning_staff = Cleaner(name="Anna")
 
-    def movie_session(
-        self,
-        movie_name: str,
-        customers: list,
-        cleaning_staff: list,
-    ) -> None:
-        for customer in customers:
-            customer.watch_movie(movie_name)
+hall.movie_session(movie_name=movie_name, customers=customers, cleaning_staff=cleaning_staff)
